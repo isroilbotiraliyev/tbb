@@ -1,0 +1,125 @@
+@media(max-width:1125px) {
+    .container {
+        padding: 0 70px;
+    }
+}
+
+@media(max-width:950px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width:880px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media(max-width:850px) {
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background: transparent;
+    }
+
+    .menu-btn>span {
+        width: 40px;
+        height: 2px;
+        background: #fff;
+        transition: 0.3s linear;
+    }
+
+    .menu-btn::after,
+    .menu-btn::before {
+        content: '';
+        width: 40px;
+        height: 2px;
+        display: block;
+        background: #fff;
+        transition: 0.3s linear;
+    }
+
+
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 50px;
+        flex-direction: column;
+        gap: 25px;
+        backdrop-filter: blur(15px);
+        box-shadow: 5px 0px 20px 0px rgb(0 0 0 / 45%);
+        z-index: 1;
+        transition: 0.3s;
+        transform: translateX(-107%);
+    }
+
+    .nav__link {
+        padding: 0;
+    }
+
+    .nav {
+        padding: 15px;
+
+    }
+
+    .menu-btn:focus::before {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .menu-btn:focus::after {
+        transform: translateY(-12px) rotate(135deg);
+    }
+
+    .menu-btn:focus>span {
+        opacity: 0;
+    }
+
+    .menu-btn:focus+.nav__list {
+        transform: translateX(0);
+    }
+
+    .nav__item:nth-of-type(1) {
+        background: none;
+    }
+}
+
+@media(max-width:770px) {
+    .header__title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header__title {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    .header__link{
+        padding: 23px 60px;
+    }
+    .header{
+        
+    }
+}
+
+@media(max-width:480px) {
+    .reklama__content {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 11px 0;
+    }
+
+    .nav__img {
+        width: 136px;
+    }
+
+    .reklama__link {
+        font-size: 14px;
+    }
+}
