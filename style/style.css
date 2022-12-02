@@ -92,6 +92,7 @@ body {
 }
 
 
+
 .nav__content {
     display: flex;
     justify-content: space-between;
@@ -130,7 +131,7 @@ body {
 
 .header {
     background: url(../images/header-bg.jpg) no-repeat center/ cover;
-    min-height: 700px;
+    min-height: 655px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,4 +205,99 @@ body {
     background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
     border-radius: 6px;
     padding: 15px 71px;
+}
+
+.foods__list-content {
+    background: #292929;
+    box-shadow: 0px 1px 8px rgba(17, 17, 17, 0.3);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.foods__list {
+    display: flex;
+    column-gap: 36px;
+    position: relative;
+    padding-left: 21px;
+
+}
+
+.foods__link {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+    padding: 21px 0;
+
+}
+
+.foods__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    transform: translateX(-50%);
+    transition: 0.3s linear;
+}
+
+.foods__link:hover::after {
+    width: 120%;
+}
+
+.menu__button {
+    color: #FFFFFF;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    line-height: 27px;
+    display: none;
+}
+.foods__content{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.foods__item {
+    width: 25%;
+    background: #0C0C0C;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+.foods__img{
+    padding: 15px;
+    position: relative;
+}
+.foods__item-inner{
+   position: absolute;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.foods__title{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding: 15px;
+}
+.foods__text{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 15px;
 }
